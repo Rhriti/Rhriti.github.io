@@ -1,0 +1,54 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+p{
+    color: rgb(81, 79, 79);
+    font-size: 14px;
+}
+ul.bullet-list {
+    list-style-type: disc; /* Specifies the type of bullet point */
+    margin-left: 20px; /* Adjust the left margin value as per your preference */
+  }
+  
+
+body{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+@media (max-width:767px){
+    body{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+}
+
+#dp{
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    text-align: center;
+}
+
+#header span{
+    margin: 10px;
+}
+
+.box{
+    height: 10px;
+}
+
+.movedown{
+    position: relative;
+    top:1.65px
+}
+
+.movedown-mail{
+  position: relative;
+  top: 2px;
+}
+body{
+    background-color:rgb(249, 238, 222) ;
+}
