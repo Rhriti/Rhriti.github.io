@@ -32,6 +32,12 @@ div{
     text-align: center;
 }
 
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #header span{
     margin: 10px;
 }
@@ -51,4 +57,5 @@ div{
 }
 body{
     background-color:rgb(249, 238, 222) ;
+    
 }
