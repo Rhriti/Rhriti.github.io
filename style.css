@@ -42,9 +42,10 @@ div{
     margin: 10px;
 }
 
-.box{
+ 
+.box1{
     height: 10px;
-}
+} 
 
 .movedown{
     position: relative;
@@ -56,6 +57,21 @@ div{
   top: 2px;
 }
 body{
-    background-color:rgb(249, 238, 222) ;
+    background-color:rgb(255, 255, 255) ;
     
+}
+
+.box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.box .content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
 }
