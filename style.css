@@ -7,7 +7,7 @@ p{
 }
 ul.bullet-list {
     list-style-type: disc; /* Specifies the type of bullet point */
-     /* Adjust the left margin value as per your preference */
+    margin-left: 20px; /* Adjust the left margin value as per your preference */
   }
   
 
@@ -32,12 +32,6 @@ div{
     text-align: center;
 }
 
-#header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 #header span{
     margin: 10px;
 }
@@ -55,7 +49,31 @@ div{
   position: relative;
   top: 2px;
 }
-body{
-    background-color:rgb(249, 238, 222) ;
-    
-}
+/* research highlights */
+.highlights {
+    border-style: solid;
+    border-color: lightgrey; 
+    border-radius: 10px; /* 10px rounded corners */
+    padding: 10px; /* adds some padding inside the div */
+    margin-bottom: 1em;
+  }
+  
+  .highlights p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .highlights ul {
+    margin-bottom: 0.5em;
+  }
+  
+  .highlights ul li {
+    margin: 0em;
+    font-size: 16px;
+  }
+  
+  .side-image {
+    width: 100%;
+    max-width: 500px;
+  }
+  
