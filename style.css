@@ -368,3 +368,32 @@ table.news tr td:first-child {
 .hidden {
   display: none;
 }
+
+/* QUOTES — edit quotes.md only (intro + bullet list) */
+/* Must override global `ul, ol { list-style: none }` */
+
+.quote-list {
+  margin: 0.15em 0 1em;
+}
+
+.quote-list p {
+  margin: 0 0 0.9em;
+  line-height: 1.4em;
+  color: #333;
+}
+
+#quote_list ul,
+.quote-list ul {
+  list-style: disc outside !important;
+  padding-left: 1.6em !important;
+  margin: 0 0 0.5em 0.15em;
+}
+
+#quote_list li,
+.quote-list li {
+  display: list-item !important;
+  list-style: disc outside !important;
+  margin-bottom: 0.55em;
+  line-height: 1.4em;
+  color: #333;
+}

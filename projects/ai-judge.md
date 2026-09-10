@@ -2,7 +2,7 @@
 title: AI Judge
 link: https://aijudges.in
 embed: https://www.youtube.com/embed/UVAvqYHO1vc?si=JnZLA4H2fxHv7t4r
-order: 1
+order: 2
 ---
 
 What would happen if you let AI reason for the hackathon winner?

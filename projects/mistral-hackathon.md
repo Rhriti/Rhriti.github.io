@@ -1,7 +1,7 @@
 ---
 title: Submission to Mistral-AI Hackathon
 link: https://github.com/Rhriti/mistralAI-hackathon
-order: 4
+order: 5
 ---
 
 One of the steps involved in cleaning a video is trimming unnecessary portion from it. For instance, expert labelled videos like 'Minecraft gameplay' don't require video segment of user setting up the game. This is a manual task. I've tried to automate this leveraging LLM and video transcript.

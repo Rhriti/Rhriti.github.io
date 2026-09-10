@@ -74,7 +74,8 @@ function toggleProfileMedia(container) {
 <div class="navigation_list">
   <h2>
     <a href="#project_place" onclick="showContent('project_place',event)">Projects</a> &bull;
-    <a href="#blog_place" onclick="showContent('blog_place',event)">Blog</a>
+    <a href="#blog_place" onclick="showContent('blog_place',event)">Blog</a> &bull;
+    <a href="#quote_place" onclick="showContent('quote_place',event)">Quotes</a>
   </h2>
 </div>
 
@@ -91,18 +92,19 @@ function toggleProfileMedia(container) {
     </tbody>
   </table>
 </div>
-<!-- legacy static project rows removed; see projects/*.md + build.js -->  
-  
 
-</div>
-
- <div id="blog_place" class="hidden">
+<div id="blog_place" class="hidden">
   <table>
     <tbody>
-
     </tbody>
   </table>
- </div>
+</div>
+
+<div id="quote_place" class="hidden">
+  <div id="quote_list" class="quote-list">
+    <!-- Quotes loaded from quotes.md -->
+  </div>
+</div>
 
 </div> <!-- end places -->
 <script>
@@ -168,7 +170,25 @@ function toggleProfileMedia(container) {
       .catch(err => console.error("Error loading projects:", err));
   }
 
-  document.addEventListener("DOMContentLoaded", function() { fetchBlogs(); fetchProjects(); });
+  function fetchQuotes() {
+    const list = document.getElementById("quote_list");
+    if (!list) return;
+    fetch('quotes.md')
+      .then(r => {
+        if (!r.ok) throw new Error('Failed to load quotes.md');
+        return r.text();
+      })
+      .then(markdown => {
+        list.innerHTML = converter.makeHtml(markdown);
+      })
+      .catch(err => console.error("Error loading quotes:", err));
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    fetchBlogs();
+    fetchProjects();
+    fetchQuotes();
+  });
 </script>
 
 

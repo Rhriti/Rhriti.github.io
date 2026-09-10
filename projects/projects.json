@@ -1,6 +1,6 @@
 [
   {
-    "title": "Reactive Combat Sports Engine",
+    "title": "Combat Sports Engine",
     "link": "",
     "image": null,
     "images": [
@@ -8,7 +8,7 @@
       "images/stickyness_PC.png"
     ],
     "embed": null,
-    "bodyMarkdown": "An audio-led performance platform designed to bring high-fidelity coaching to solo training.\r\n\r\n**The Story :** Combat sports are the oldest and most lively form of competition, yet solo training-specifically shadowboxing-is often a static, non-reactive experience. I wanted to build a tool that replicated the \"call-and-response\" energy of a physical coach, accessible to anyone with a pair of gloves and a smartphone.\r\n\r\nBuilding this as a solopreneur required a heavy focus on minimalist UI and a highly scalable backend. Since January, the platform has seen a 4,065% increase in sessions. It has been a fascinating exercise in global product-market fit; without traditional marketing, the project has reached 1.9k active users across 140 countries.\r\n\r\nThe technical challenge was ensuring the experience was \"sticky\" enough to compete with a physical gym. Currently, the platform facilitates over 200 hours of active usage, maintaining a 80.29% engagement rate. In high-adoption regions like India, users are engaging for an average of 13 minutes and 26 seconds per session, effectively doubling the global baseline for digital training engagement."
+    "bodyMarkdown": "An audio-led performance platform designed to bring high-fidelity coaching to solo training.\r\n\r\n**The Story :** Combat sports are the oldest and most lively form of competition, yet solo training-specifically shadowboxing-is often a static, non-reactive experience. I wanted to build a tool that replicated the \"call-and-response\" energy of a physical coach, accessible to anyone with a smartphone.\r\n\r\nI started building this as a solopreneur. Since January, the platform has seen a 4,065% increase in sessions. It has been a fascinating exercise in global product-market fit; without traditional marketing, the project has reached 1.9k active users across 140 countries.\r\n\r\nThe technical challenge was ensuring the experience was \"sticky\" enough to compete with a physical gym. Currently, the platform facilitates over 200 hours of active usage, maintaining a 80.29% engagement rate. In high-adoption regions like India, users are engaging for an average of 13 minutes and 26 seconds per session, effectively doubling the global baseline for digital training engagement."
   },
   {
     "title": "AI Judge",

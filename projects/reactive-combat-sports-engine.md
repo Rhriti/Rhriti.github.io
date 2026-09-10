@@ -4,7 +4,7 @@ link:
 embed:
 image:
 images: images/Screenshot_PC.png, images/stickyness_PC.png
-order: 5
+order: 1
 ---
 
 An audio-led performance platform designed to bring high-fidelity coaching to solo training.
