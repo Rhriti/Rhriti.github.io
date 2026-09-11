@@ -1,5 +1,4 @@
 lines I keep coming back to — personal quotes, songs, scraps of talk, things that stuck .
 
-- > If you breath oxygen it's a fair game
-- > The best way to look at a bird is to look at the bird
-- > Ain't no grave to hold my body down — [YouTube](https://youtu.be/9zE4-LX0wrY?si=4qg96jEq3VLc8sqH)
+- The best way to look at a bird is to look at the bird. Fenman was once asked by his school going friend to identify a bird. Unable to do so he said that his father doesn't teach him anything. Fenman when narrated the incident to his father, his father replied that a bird is called by different names in different regions — and even if you knew every name, you'd still know not a single thing about the bird. That's when he said : the best way to look at a bird is to look at the bird.
+
