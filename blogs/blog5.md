@@ -1,3 +1,6 @@
+---
+audience: personal
+---
 <h2 style="color: #245ab3;">The Bus Stop Analogy</h2>
 Date-08/09/2026
 <p>

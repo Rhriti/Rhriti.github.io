@@ -40,19 +40,33 @@ function parseBlogDate(filePath, content) {
   }
 }
 
+function parseBlogAudience(content) {
+  const raw = content.replace(/^\uFEFF/, '').trim();
+  const fmMatch = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if (fmMatch) {
+    const line = fmMatch[1].split(/\r?\n/).find(l => /^\s*audience:\s*/i.test(l));
+    if (line) {
+      const v = line.replace(/^\s*audience:\s*['"]?([^'"\s]+)['"]?/i, '$1').trim().toLowerCase();
+      if (v === 'personal' || v === 'professional') return v;
+    }
+  }
+  return 'professional';
+}
+
 const blogsDir = path.join(ROOT, 'blogs');
 if (fs.existsSync(blogsDir)) {
   const blogFiles = fs.readdirSync(blogsDir).filter(f => f.endsWith('.md'));
   const withDates = blogFiles.map(f => {
     const filePath = path.join(blogsDir, f);
     const content = fs.readFileSync(filePath, 'utf8');
-    return { name: f, dateMs: parseBlogDate(filePath, content) };
+    return { name: f, dateMs: parseBlogDate(filePath, content), audience: parseBlogAudience(content) };
   });
   withDates.sort((a, b) => b.dateMs - a.dateMs); // latest first
   const files = withDates.map(x => x.name);
+  const posts = withDates.map(x => ({ file: x.name, audience: x.audience }));
   fs.writeFileSync(
     path.join(blogsDir, 'manifest.json'),
-    JSON.stringify({ files }, null, 2)
+    JSON.stringify({ files, posts }, null, 2)
   );
   console.log('blogs/manifest.json written, files:', files.length, '(by date, latest first)');
 }

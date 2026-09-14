@@ -1,10 +1,41 @@
 {
   "files": [
+    "blog7.md",
     "blog6.md",
     "blog5.md",
     "blog4.md",
     "blog2.md",
     "blog3.md",
     "blog1.md"
+  ],
+  "posts": [
+    {
+      "file": "blog7.md",
+      "audience": "professional"
+    },
+    {
+      "file": "blog6.md",
+      "audience": "professional"
+    },
+    {
+      "file": "blog5.md",
+      "audience": "personal"
+    },
+    {
+      "file": "blog4.md",
+      "audience": "professional"
+    },
+    {
+      "file": "blog2.md",
+      "audience": "personal"
+    },
+    {
+      "file": "blog3.md",
+      "audience": "professional"
+    },
+    {
+      "file": "blog1.md",
+      "audience": "professional"
+    }
   ]
 }

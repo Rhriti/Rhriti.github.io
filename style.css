@@ -191,6 +191,47 @@ h1 {
   margin-bottom: 0.5em;
 }
 
+.mode-switch {
+  display: block;
+  text-align: center;
+  font-size: 0.85em;
+  line-height: 1.2;
+  white-space: nowrap;
+  margin: 0 0 1em;
+}
+
+.mode-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: #888;
+  cursor: pointer;
+}
+
+.mode-btn:hover {
+  color: #245ab3;
+}
+
+.mode-btn.is-active {
+  color: #245ab3;
+  font-weight: 700;
+}
+
+.mode-switch-sep {
+  color: #bbb;
+  margin: 0 0.35em;
+}
+
+.quote-nav {
+  display: none;
+}
+
+body.mode-personal .quote-nav {
+  display: inline;
+}
+
 
 #main {
   /*border-radius: .333em;*/
